@@ -1,0 +1,89 @@
+﻿<Page x:Class="NyilvántartóWPF.Pages.Üres_rendelés_szerkesztése"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NyilvántartóWPF.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Üres_rendelés_szerkesztése">
+
+     <Frame NavigationUIVisibility="Hidden" x:Name="_NavigationFrame">
+          <Frame.Content>
+               <ScrollViewer>
+                    <StackPanel Margin="300,0,0,0" VerticalAlignment="Stretch" HorizontalAlignment="Center">
+                         <TextBlock FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Top">Céges rendelés listázása/szerkesztése</TextBlock>
+                         <DockPanel>
+                              <Frame NavigationUIVisibility="Hidden"/>
+                         </DockPanel>
+                         <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                              <Grid.ColumnDefinitions>
+                                   <ColumnDefinition Width="200"></ColumnDefinition>
+                                   <ColumnDefinition Width="200"></ColumnDefinition>
+                                   <ColumnDefinition Width="170"></ColumnDefinition>
+                                   <ColumnDefinition Width="170"></ColumnDefinition>
+                                   <ColumnDefinition Width="170"></ColumnDefinition>
+                              </Grid.ColumnDefinitions>
+                              <Label Height="40"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="0">Beszállító</Label>
+                              <Label Height="40"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="1">Anyagnév</Label>
+                              <Label Height="40"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="2">Menyiség</Label>
+                              <Label Height="40"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="3">Eredeti mennyiség</Label>
+                              <Label Height="40"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="4">Mikor</Label>
+                         </Grid>
+                         <ListBox ItemsSource="{Binding}" DataContext="{Binding rendelesek}" x:Name="szerk_ures_rendelesek_listazasa_listbox" MouseDoubleClick="szerk_ures_rendelesek_listazasa_listbox_MouseDoubleClick" SelectionChanged="szerk_ures_rendelesek_listazasa_listbox_SelectionChanged">
+                              <ListBox.ItemTemplate>
+                                   <DataTemplate>
+                                        <Grid HorizontalAlignment="Center">
+                                             <Grid.ColumnDefinitions>
+                                                  <ColumnDefinition Width="200"></ColumnDefinition>
+                                                  <ColumnDefinition Width="200"></ColumnDefinition>
+                                                  <ColumnDefinition Width="170"></ColumnDefinition>
+                                                  <ColumnDefinition Width="170"></ColumnDefinition>
+                                                  <ColumnDefinition Width="170"></ColumnDefinition>
+                                             </Grid.ColumnDefinitions>
+                                             <TextBlock Height="25"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="0" Text="{Binding beszállító}"></TextBlock>
+                                             <TextBlock Height="25"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="1" Text="{Binding anyagnév}"></TextBlock>
+                                             <TextBlock Height="25"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="2" Text="{Binding mennyiség}"></TextBlock>
+                                             <TextBlock Height="25"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="3" Text="{Binding eredeti_mennyiség}"></TextBlock>
+                                             <TextBlock Height="25"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="4" Text="{Binding dátum}"></TextBlock>
+                                        </Grid>
+                                   </DataTemplate>
+                              </ListBox.ItemTemplate>
+                         </ListBox>
+                         <Grid>
+                              <Grid.RowDefinitions>
+                                   <RowDefinition Height="75"></RowDefinition>
+                                   <RowDefinition Height="75"></RowDefinition>
+                                   <RowDefinition Height="75"></RowDefinition>
+                              </Grid.RowDefinitions>
+                              <Grid.ColumnDefinitions>
+                                   <ColumnDefinition Width="200"></ColumnDefinition>
+                                   <ColumnDefinition Width="200"></ColumnDefinition>
+                                   <ColumnDefinition Width="200"></ColumnDefinition>
+                              </Grid.ColumnDefinitions>
+                              <Label HorizontalAlignment="Center" VerticalAlignment="Center" Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="0" Grid.Column="0"  Content="Anyagnév"/>
+                              <Label HorizontalAlignment="Center" VerticalAlignment="Center" Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="0" Grid.Column="1"  Content="Beszállító"/>
+                              <Label HorizontalAlignment="Center" VerticalAlignment="Center" Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="0" Grid.Column="2"  Content="Mennyit"/>
+                              <ComboBox Height="40" Width="150" Grid.Row="1" Grid.Column="0" ItemsSource="{Binding}" DataContext="{Binding törzsadatok}" x:Name="szerk_törzsadatok_combobox" SelectionChanged="szerk_törzsadatok_combobox_SelectionChanged">
+                                   <ComboBox.ItemTemplate>
+                                        <DataTemplate>
+                                             <Label Height="35"  FontSize="20" FontFamily="Times New Roman" Content="{Binding anyagnév}"></Label>
+                                        </DataTemplate>
+                                   </ComboBox.ItemTemplate>
+                              </ComboBox>
+                              <ComboBox Height="40" Width="150" Grid.Row="1" Grid.Column="1" ItemsSource="{Binding}" DataContext="{Binding beszállítók}" x:Name="szerk_beszállítók_vegleg_combobox" SelectionChanged="szerk_beszállítók_vegleg_combobox_SelectionChanged">
+                                   <ComboBox.ItemTemplate>
+                                        <DataTemplate>
+                                             <Label Height="35"  FontSize="20" FontFamily="Times New Roman" Content="{Binding név}"></Label>
+                                        </DataTemplate>
+                                   </ComboBox.ItemTemplate>
+                              </ComboBox>
+                              <TextBox Width="200" Height="30" FontSize="20" FontFamily="Times New Roman" Grid.Row="1" Grid.Column="2" x:Name="szerk_mennyi_textbox" HorizontalAlignment="Left"></TextBox>
+                              <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="20" Height="35" Width="200" x:Name="szerk_rendelés_button" Click="szerk_rendelés_button_Click">Rendelés leadása</Button>
+                              <Button Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="20" Height="35" Width="200" x:Name="del_rendelés_button" Click="del_rendelés_button_Click">Rendelés törlése</Button>
+                         </Grid>
+                    </StackPanel>
+               </ScrollViewer>
+          </Frame.Content>
+     </Frame>
+</Page>

@@ -1,0 +1,120 @@
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Törzsadat_listázása.g.cs
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_Listázása.g.cs
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_rendelés.g.cs
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\App.g.cs
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF_MarkupCompile.cache
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF_MarkupCompile.lref
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\bin\Debug\NyilvántartóWPF.exe.config
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\bin\Debug\NyilvántartóWPF.exe
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\bin\Debug\NyilvántartóWPF.pdb
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\MainWindow.baml
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Törzsadat_listázása.baml
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_Listázása.baml
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_rendelés.baml
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.g.resources
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.Properties.Resources.resources
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.csproj.GenerateResource.Cache
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.exe
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.pdb
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Törzsadat_felvétel.g.cs
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_felvétel.g.cs
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Törzsadat_felvétel.baml
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_felvétel.baml
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.csprojResolveAssemblyReference.cache
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Rendelés_véglegesítése.g.cs
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Rendelés_véglegesítése.baml
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Üres_rendelés.g.cs
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Üres_rendelés.baml
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Beszállító_felvétele.g.cs
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Beszállító_liszázasa.g.cs
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Beszállító_felvétele.baml
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Beszállító_liszázasa.baml
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Beszállító_rendelés_véglegesítése.g.cs
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Beszállító_rendelés_véglegesítése.baml
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Raktárkönyv.g.cs
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Raktárkönyv.baml
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Üres_rendelés_szerkesztése.g.cs
+C:\Users\Doniald\documents\visual studio 2015\Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Üres_rendelés_szerkesztése.baml
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\bin\Debug\NyilvántartóWPF.exe.config
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.exe
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.pdb
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\bin\Debug\NyilvántartóWPF.exe
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\bin\Debug\NyilvántartóWPF.pdb
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\MainWindow.g.cs
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Beszállító_felvétele.g.cs
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Beszállító_liszázasa.g.cs
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Raktárkönyv.g.cs
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Rendelés_véglegesítése.g.cs
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Törzsadat_felvétel.g.cs
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Törzsadat_listázása.g.cs
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_felvétel.g.cs
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_Listázása.g.cs
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_rendelés.g.cs
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Üres_rendelés.g.cs
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Üres_rendelés_szerkesztése.g.cs
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\App.g.cs
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF_MarkupCompile.cache
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF_MarkupCompile.lref
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\MainWindow.baml
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Beszállító_felvétele.baml
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Beszállító_liszázasa.baml
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Raktárkönyv.baml
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Rendelés_véglegesítése.baml
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Törzsadat_felvétel.baml
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Törzsadat_listázása.baml
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_felvétel.baml
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_Listázása.baml
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_rendelés.baml
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Üres_rendelés.baml
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Üres_rendelés_szerkesztése.baml
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.g.resources
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.Properties.Resources.resources
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.csproj.GenerateResource.Cache
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Behozta_a_beszallito.g.cs
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Behozta_a_beszallito.baml
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Listák.g.cs
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Listák.baml
+C:\Users\doniald\Desktop\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.csprojResolveAssemblyReference.cache
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\bin\Debug\NyilvántartóWPF.exe.config
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\bin\Debug\NyilvántartóWPF.exe
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\bin\Debug\NyilvántartóWPF.pdb
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.csprojResolveAssemblyReference.cache
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Behozta_a_beszallito.g.cs
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Beszállító_felvétele.g.cs
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Beszállító_liszázasa.g.cs
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Listák.g.cs
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Raktárkönyv.g.cs
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Rendelés_véglegesítése.g.cs
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Törzsadat_felvétel.g.cs
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Törzsadat_listázása.g.cs
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_felvétel.g.cs
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_Listázása.g.cs
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_rendelés.g.cs
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Üres_rendelés.g.cs
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Üres_rendelés_szerkesztése.g.cs
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\App.g.cs
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF_MarkupCompile.cache
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF_MarkupCompile.lref
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\MainWindow.baml
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Behozta_a_beszallito.baml
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Beszállító_felvétele.baml
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Beszállító_liszázasa.baml
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Listák.baml
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Raktárkönyv.baml
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Rendelés_véglegesítése.baml
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Törzsadat_felvétel.baml
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Törzsadat_listázása.baml
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_felvétel.baml
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_Listázása.baml
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Ügyfél_rendelés.baml
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Üres_rendelés.baml
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\Üres_rendelés_szerkesztése.baml
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.g.resources
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.Properties.Resources.resources
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.csproj.GenerateResource.Cache
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.exe
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\NyilvántartóWPF.pdb
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\UgyfelRendelesModositas.g.cs
+C:\Users\Doniald\Desktop\Self-made Projects\NyilvántartóWPF\NyilvántartóWPF\obj\Debug\Pages\UgyfelRendelesModositas.baml

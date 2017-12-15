@@ -1,0 +1,15 @@
+<Frame NavigationUIVisibility="Hidden" x:Name="_NavigationFrame">
+          <Frame.Content>
+               <ScrollViewer>
+                    <StackPanel Margin="300,0,0,0" VerticalAlignment="Stretch" HorizontalAlignment="Center">
+                         <TextBlock FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Top">Raktárkönyv</TextBlock>
+                         <DockPanel>
+                              <Frame NavigationUIVisibility="Hidden"/>
+                         </DockPanel>
+                         <Grid>
+                              
+                         </Grid>
+                    </StackPanel>
+               </ScrollViewer>
+          </Frame.Content>
+     </Frame>

@@ -1,0 +1,94 @@
+﻿<Page x:Class="NyilvántartóWPF.Pages.Listák"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NyilvántartóWPF.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Listák">
+
+    <Frame NavigationUIVisibility="Hidden" x:Name="_NavigationFrame">
+        <Frame.Content>
+            <ScrollViewer>
+                <StackPanel Margin="300,0,0,0" VerticalAlignment="Stretch" HorizontalAlignment="Center">
+                    <TextBlock FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Top">Listák</TextBlock>
+                    <DockPanel>
+                        <Frame NavigationUIVisibility="Hidden"/>
+                    </DockPanel>
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Top">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                            <RowDefinition Height="100"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="300"></ColumnDefinition>
+                            <ColumnDefinition Width="300"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center">Dátum(tól-ig):</TextBlock>
+                        <TextBox Width="200" Height="30"  FontSize="20" FontFamily="Times New Roman" Grid.Row="1" Grid.Column="0" x:Name="tol_textbox" HorizontalAlignment="Center"/>
+                        <TextBox Width="200" Height="30"  FontSize="20" FontFamily="Times New Roman" Grid.Row="1" Grid.Column="1" x:Name="ig_textbox" HorizontalAlignment="Center"/>
+                        <TextBlock Grid.Row="2" Grid.ColumnSpan="2" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center">Szűrés:</TextBlock>
+                        <ComboBox FontSize="20" FontFamily="Times New Roman" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="0" Height="40" Width="150" x:Name="szuro_combobox" SelectionChanged="szuro_combobox_SelectionChanged">
+                            <ComboBoxItem Height="35"  FontSize="20" FontFamily="Times New Roman" Content=""></ComboBoxItem>
+                            <ComboBoxItem Height="35"  FontSize="20" FontFamily="Times New Roman" Content="anyag"></ComboBoxItem>
+                            <ComboBoxItem Height="35"  FontSize="20" FontFamily="Times New Roman" Content="főcsoport"></ComboBoxItem>
+                            <ComboBoxItem Height="35"  FontSize="20" FontFamily="Times New Roman" Content="gyártó"></ComboBoxItem>
+                        </ComboBox>
+                        <ComboBox Grid.Row="3" Grid.Column="1" ItemsSource="{Binding}" DataContext="{Binding mik}" FontSize="20" FontFamily="Times New Roman" VerticalAlignment="Center" HorizontalAlignment="Center" Height="40" Width="150" x:Name="ésmit" SelectionChanged="ésmit_SelectionChanged">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Height="25"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Center" Text="{Binding mi}"></TextBlock>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                        <TextBlock Grid.Row="4" Grid.ColumnSpan="2" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center">Felhasználó szintű listák:</TextBlock>
+                        <Button Grid.Row="5" Grid.Column="0" x:Name="elso_button" Click="elso_button_Click" Height="65" Width="270" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Ki mennyit rendelt" FontSize="20" FontFamily="Times New Roman"></Button>
+                        <Button Grid.Row="5" Grid.Column="1" x:Name="masodik_button" Click="masodik_button_Click" Height="65" Width="270" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Adott anyagból ki mennyit rendelt" FontSize="20" FontFamily="Times New Roman"></Button>
+                        <Button Grid.Row="6" Grid.Column="0" x:Name="hetedik_button" Click="hetedik_button_Click" Height="65" Width="270" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Ki mennyit rendelt levonások nélkül" FontSize="20" FontFamily="Times New Roman"></Button>
+                        <TextBlock Grid.Row="7" Grid.ColumnSpan="2" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center">Beszállító szintű listák:</TextBlock>
+                        <Button Grid.Row="8" Grid.Column="0" x:Name="harmadik_button" Click="harmadik_button_Click" Height="65" Width="270" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Mennyit hoztak be" FontSize="20" FontFamily="Times New Roman"></Button>
+                        <Button Grid.Row="8" Grid.Column="1" x:Name="hatodik_button" Click="hatodik_button_Click" Height="65" Width="270" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Miből mennyit hoztak be" FontSize="20" FontFamily="Times New Roman"></Button>
+                        <Button Grid.Row="9" Grid.Column="0" x:Name="nyolcadik_button" Click="nyolcadik_button_Click" Height="65" Width="270" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Mennyit rendeltetek" FontSize="20" FontFamily="Times New Roman"></Button>
+                        <TextBlock Grid.Row="10" Grid.ColumnSpan="2" FontSize="30" HorizontalAlignment="Center">Ügyfélkarton, válassz ügyfelet:</TextBlock>
+                        <ComboBox Grid.Row="11" Grid.ColumnSpan="2" HorizontalAlignment="Center" Width="250" Height="40" ItemsSource="{Binding}" DataContext="{Binding beszallitok}" x:Name="ugyfelek_listazasa_listbox" SelectionChanged="ugyfelek_listazasa_listbox_SelectionChanged">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Height="25"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Center" Text="{Binding teljes_név}"></TextBlock>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                        <Button Grid.Row="12" Grid.ColumnSpan="2" x:Name="negyedik_button" Click="negyedik_button_Click" Height="65" Width="270" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Ügyfélkarton" FontSize="20" FontFamily="Times New Roman"></Button>
+                        <TextBlock Grid.Row="13" Grid.ColumnSpan="2" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center">Beszállítókarton, válassz beszállítót:</TextBlock>
+                        <ComboBox Grid.Row="14" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" Height="40" ItemsSource="{Binding}" DataContext="{Binding név}" x:Name="beszallitok_listazasa_listbox" SelectionChanged="beszallitok_listazasa_listbox_SelectionChanged">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Height="25"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Center" Text="{Binding név}"></TextBlock>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                        <Button Grid.Row="15" Grid.ColumnSpan="2" x:Name="otodik_button" Click="otodik_button_Click" HorizontalAlignment="Center" Width="270" Height="65" VerticalAlignment="Center" Content="Beszállítókarton" FontSize="20" FontFamily="Times New Roman"></Button>
+                        <TextBlock Grid.Row="16" Grid.ColumnSpan="2" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center">Ugyfelek listazasa:</TextBlock>
+                        <Button Grid.Row="17" Grid.ColumnSpan="2" x:Name="ugyfelek_button" Click="ugyfelek_button_Click" Height="65" Width="270" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Ugyfelek listazasa" FontSize="20" FontFamily="Times New Roman"></Button>
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+        </Frame.Content>
+    </Frame>
+</Page>

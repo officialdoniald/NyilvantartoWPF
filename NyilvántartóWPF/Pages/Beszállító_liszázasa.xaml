@@ -1,0 +1,91 @@
+﻿<Page x:Class="NyilvántartóWPF.Pages.Beszállító_liszázasa"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NyilvántartóWPF.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Beszállító_liszázasa">
+
+     <Frame NavigationUIVisibility="Hidden" x:Name="_NavigationFrame">
+          <Frame.Content>
+               <Grid>
+                    <DockPanel>
+                         <Frame NavigationUIVisibility="Hidden"/>
+                    </DockPanel>
+                    <ScrollViewer HorizontalAlignment="Stretch">
+                         <StackPanel Margin="300,0,0,0" Visibility="Visible">
+                              <TextBlock FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Center">Beszállítók listázása/szerkesztése</TextBlock>
+                              <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                   <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="200"></ColumnDefinition>
+                                        <ColumnDefinition Width="400"></ColumnDefinition>
+                                        <ColumnDefinition Width="170"></ColumnDefinition>
+                                        <ColumnDefinition Width="120"></ColumnDefinition>
+                                   </Grid.ColumnDefinitions>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="0">Teljes név</Label>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="1">Lakcím</Label>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="2">Kapcsolattartó neve</Label>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="3">Telefonszám</Label>
+                              </Grid>
+                              <ListBox ItemsSource="{Binding}" DataContext="{Binding beszallitok}" x:Name="beszallitok_listazasa_listbox" MouseDoubleClick="beszallitok_listazasa_listbox_MouseDoubleClick" SelectionChanged="beszallitok_listazasa_listbox_SelectionChanged">
+                                   <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                             <Grid HorizontalAlignment="Center">
+                                                  <Grid.ColumnDefinitions>
+                                                       <ColumnDefinition Width="200"></ColumnDefinition>
+                                                       <ColumnDefinition Width="400"></ColumnDefinition>
+                                                       <ColumnDefinition Width="170"></ColumnDefinition>
+                                                       <ColumnDefinition Width="120"></ColumnDefinition>
+                                                  </Grid.ColumnDefinitions>
+                                                  <TextBlock Height="25"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="0" Text="{Binding név}"></TextBlock>
+                                                  <TextBlock Height="25"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="1" Text="{Binding cím}"></TextBlock>
+                                                  <TextBlock Height="25"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="2" Text="{Binding kapcsolattartó_neve}"></TextBlock>
+                                                  <TextBlock Height="25"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="3" Text="{Binding kapcsolattartó_telefonszáma}"></TextBlock>
+                                             </Grid>
+                                        </DataTemplate>
+                                   </ListBox.ItemTemplate>
+                              </ListBox>
+                              <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                                   <Grid.RowDefinitions>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                   </Grid.RowDefinitions>
+                                   <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="292"></ColumnDefinition>
+                                        <ColumnDefinition Width="408"></ColumnDefinition>
+                                   </Grid.ColumnDefinitions>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Cég neve:</Label>
+                                   <TextBox Width="200" Height="30"  FontSize="20" FontFamily="Times New Roman" Grid.Row="1" Grid.Column="1" x:Name="szerk_ceg_nev_textbox" HorizontalAlignment="Left"/>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Cég címe:</Label>
+                                   <TextBox Width="200" Height="30"  FontSize="20" FontFamily="Times New Roman" Grid.Row="2" Grid.Column="1" x:Name="szerk_ceg_cime_textbox" HorizontalAlignment="Left"/>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Cég adószáma:</Label>
+                                   <TextBox Width="200" Height="30"  FontSize="20" FontFamily="Times New Roman" Grid.Row="3" Grid.Column="1" x:Name="szerk_ceg_adoszama_textbox" HorizontalAlignment="Left"/>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Cég bankszámlaszáma:</Label>
+                                   <TextBox Width="200" Height="30"  FontSize="20" FontFamily="Times New Roman" Grid.Row="4" Grid.Column="1" x:Name="szerk_ceg_bankszámlaszama_textbox" HorizontalAlignment="Left"/>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Kapcsolattartó neve:</Label>
+                                   <TextBox Width="200" Height="30"  FontSize="20" FontFamily="Times New Roman" Grid.Row="5" Grid.Column="1" x:Name="szerk_kapcsolattarto_nev_textbox" HorizontalAlignment="Left"/>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Kapcsolattartó telefonszáma:</Label>
+                                   <TextBox Width="200" Height="30"  FontSize="20" FontFamily="Times New Roman" Grid.Row="6" Grid.Column="1" x:Name="szerk_kapcsolattarto_telszam_textbox" HorizontalAlignment="Left"/>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="7" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Kapcsolattartó email-címe:</Label>
+                                   <TextBox Width="200" Height="30"  FontSize="20" FontFamily="Times New Roman" Grid.Row="7" Grid.Column="1" x:Name="szerk_kapcsolattarto_email_textbox" HorizontalAlignment="Left"/>
+                                   <Button Height="65"  FontSize="20" FontFamily="Times New Roman" Grid.Row="8" Grid.Column="0" x:Name="update_button" Content="Frissítés" Width="200" Click="update_button_Click" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                                   <Button Height="65"  FontSize="20" FontFamily="Times New Roman" Grid.Row="8" Grid.Column="1" x:Name="delete_button" Content="Törlés" Width="200" Click="delete_button_Click" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                                   <TextBlock Foreground="Green" FontSize="20" FontFamily="Times New Roman" Height="40" Grid.Row="9" Grid.Column="0"  x:Name="szerk_sikerultvagynem_textblock" Width="200" HorizontalAlignment="Center"/>
+                              </Grid>
+                         </StackPanel>
+                    </ScrollViewer>
+               </Grid>
+          </Frame.Content>
+     </Frame>
+</Page>

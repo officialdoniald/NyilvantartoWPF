@@ -1,0 +1,83 @@
+﻿<Page x:Class="NyilvántartóWPF.Pages.Törzsadat_felvétel"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NyilvántartóWPF.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Törzsadat_felvétel">
+    
+     <Frame NavigationUIVisibility="Hidden">
+          <Frame.Content>
+               <Grid>
+                    <DockPanel>
+                         <Frame x:Name="_NavigationFrame" NavigationUIVisibility="Hidden"/>
+                    </DockPanel>
+                    <ScrollViewer x:Name="törzsadat_lista_felvitel_scrollviewer" HorizontalAlignment="Stretch">
+                         <StackPanel Margin="300,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="törzsadat_lista_felvitel_stackpanel">
+                              <TextBlock FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Center">Törzsadatok felvétele</TextBlock>
+                              <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                                   <Grid.RowDefinitions>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                   </Grid.RowDefinitions>
+                                   <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="200"></ColumnDefinition>
+                                        <ColumnDefinition Width="200"></ColumnDefinition>
+                                   </Grid.ColumnDefinitions>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman"  Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Anyagnév:</Label>
+                                   <TextBox Width="200" Height="30" FontSize="20" FontFamily="Times New Roman" Grid.Row="0" Grid.Column="1" x:Name="anyagnev_textbox" HorizontalAlignment="Left"></TextBox>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman"  Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Kiszerelés:</Label>
+                                   <ComboBox Grid.Row="1" Grid.Column="1" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="kiszereles_combobox" SelectionChanged="kiszereles_combobox_SelectionChanged">
+                                        <ComboBoxItem Content="db"/>
+                                        <ComboBoxItem Content="csomag"/>
+                                        <ComboBoxItem Content="1l"/>
+                                        <ComboBoxItem Content="3l"/>
+                                        <ComboBoxItem Content="5l"/>
+                                        <ComboBoxItem Content="10l"/>
+                                        <ComboBoxItem Content="20l"/>
+                                        <ComboBoxItem Content="25l"/>
+                                        <ComboBoxItem Content="t"/>
+                                        <ComboBoxItem Content="zsák"/>
+                                        <ComboBoxItem Content="BB/500"/>
+                                        <ComboBoxItem Content="BB/600"/>
+                                        <ComboBoxItem Content="BB/700"/>
+                                        <ComboBoxItem Content="BB/1000"/>
+                                   </ComboBox>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman"  Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Főcsoport:</Label>
+                                   <ComboBox Grid.Row="2" Grid.Column="1" Margin="10" x:Name="focsoport_combobox" VerticalAlignment="Center" HorizontalAlignment="Center" SelectionChanged="focsoport_combobox_SelectionChanged_1">
+                                        <ComboBoxItem Content="lombtrágya"/>
+                                        <ComboBoxItem Content="műtrágya"/>
+                                        <ComboBoxItem Content="növényvédőszer"/>
+                                        <ComboBoxItem Content="vetőmag"/>
+                                   </ComboBox>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman"  Grid.Row="3" Grid.Column="0" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center">Alcsoport:</Label>
+                                   <TextBox Width="200" Height="30" FontSize="20" FontFamily="Times New Roman" Grid.Row="3" Grid.Column="1" x:Name="alcsoport_textbox" HorizontalAlignment="Left"></TextBox>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman"  Grid.Row="4" Grid.Column="0" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center">Gyártó:</Label>
+                                   <TextBox Width="200" Height="30" FontSize="20" FontFamily="Times New Roman" Grid.Row="4" Grid.Column="1" x:Name="gyarto_textbox" HorizontalAlignment="Left"></TextBox>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman"  Grid.Row="5" Grid.Column="0" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center">Kategória:</Label>
+                                   <ComboBox Grid.Row="5" Grid.Column="1" Margin="10" x:Name="kat_combobox" VerticalAlignment="Center" HorizontalAlignment="Center" SelectionChanged="kat_combobox_SelectionChanged">
+                                        <ComboBoxItem Content=" "/>
+                                        <ComboBoxItem Content="I. Kategória"/>
+                                        <ComboBoxItem Content="II. Kategória"/>
+                                        <ComboBoxItem Content="III. Kategória"/>
+                                   </ComboBox>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman"  Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">UN szám:</Label>
+                                   <TextBox Width="200" Height="30" FontSize="20" FontFamily="Times New Roman" Grid.Row="6" Grid.Column="1" x:Name="un_szam_textbox" HorizontalAlignment="Left"></TextBox>
+                            <Button FontSize="20" FontFamily="Times New Roman" Grid.Row="7" Grid.ColumnSpan="2"  x:Name="törzsadat_felvetel_button" Content="Felviszem" Width="200" Height="65" HorizontalAlignment="Center" VerticalAlignment="Center" Click="törzsadat_felvetel_button_Click"></Button>
+                                   <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontFamily="Times New Roman" Foreground="Green" Height="30" Grid.Row="7" Grid.Column="1"  x:Name="sikerultvagynem1_textblock" Width="200"/>
+                              </Grid>
+                         </StackPanel>
+                    </ScrollViewer>
+               </Grid>
+          </Frame.Content>
+     </Frame>
+</Page>

@@ -1,0 +1,104 @@
+﻿<Page x:Class="NyilvántartóWPF.Pages.Ügyfél_Listázása"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NyilvántartóWPF.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Ügyfél_Listázása">
+
+     <Frame NavigationUIVisibility="Hidden">
+          <Frame.Content>
+               <Grid>
+                    <DockPanel>
+                         <Frame x:Name="_NavigationFrame" NavigationUIVisibility="Hidden"/>
+                    </DockPanel>
+                    <ScrollViewer Margin="300,0,0,0" HorizontalAlignment="Stretch" Visibility="Visible" IsEnabled="True">
+                         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" x:Name="ügyfelek_listazasa_stackpanel">
+                              <TextBlock FontSize="60" HorizontalAlignment="Center">Ügyfelek listázása/szerkesztése</TextBlock>
+                              <TextBlock FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                              <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                                   <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="200"></ColumnDefinition>
+                                        <ColumnDefinition Width="500"></ColumnDefinition>
+                                        <ColumnDefinition Width="120"></ColumnDefinition>
+                                   </Grid.ColumnDefinitions>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="0">Teljes név</Label>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="1">Lakcím</Label>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="2">Telefonszám</Label>
+                              </Grid>
+                              <ListBox ItemsSource="{Binding}" DataContext="{Binding ügyfelek}" x:Name="ügyfelek_listazasa_listbox" MouseDoubleClick="ügyfelek_listazasa_listbox_DoubleTapped" SelectionChanged="ügyfelek_listazasa_listbox_SelectionChanged">
+                                   <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                             <Grid HorizontalAlignment="Center">
+                                                  <Grid.ColumnDefinitions>
+                                                       <ColumnDefinition Width="200"></ColumnDefinition>
+                                                       <ColumnDefinition Width="500"></ColumnDefinition>
+                                                       <ColumnDefinition Width="120"></ColumnDefinition>
+                                                  </Grid.ColumnDefinitions>
+                                                  <TextBlock Height="25"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="0" Text="{Binding teljes_név}"></TextBlock>
+                                                  <TextBlock Height="25"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="1" Text="{Binding lakcím}"></TextBlock>
+                                                  <TextBlock Height="25"  FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Left" Grid.Column="2" Text="{Binding telefonszám}"></TextBlock>
+                                             </Grid>
+                                        </DataTemplate>
+                                   </ListBox.ItemTemplate>
+                              </ListBox>
+                              <StackPanel x:Name="szerk_felhasznalo_regisztracio_stackpanel">
+                                   <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <Grid.RowDefinitions>
+                                             <RowDefinition Height="75"></RowDefinition>
+                                             <RowDefinition Height="75"></RowDefinition>
+                                             <RowDefinition Height="75"></RowDefinition>
+                                             <RowDefinition Height="75"></RowDefinition>
+                                             <RowDefinition Height="75"></RowDefinition>
+                                             <RowDefinition Height="75"></RowDefinition>
+                                             <RowDefinition Height="75"></RowDefinition>
+                                             <RowDefinition Height="75"></RowDefinition>
+                                             <RowDefinition Height="75"></RowDefinition>
+                                             <RowDefinition Height="75"></RowDefinition>
+                                             <RowDefinition Height="75"></RowDefinition>
+                                             <RowDefinition Height="75"></RowDefinition>
+                                             <RowDefinition Height="75"></RowDefinition>
+                                             <RowDefinition Height="75"></RowDefinition>
+                                             <RowDefinition Height="75"></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                             <ColumnDefinition Width="292"></ColumnDefinition>
+                                             <ColumnDefinition Width="408"></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Teljes név:</Label>
+                                        <TextBox Width="200" Height="30" FontSize="20" FontFamily="Times New Roman" Grid.Row="1" Grid.Column="1" x:Name="szerk_teljes_nev_textbox" HorizontalAlignment="Left"/>
+                                        <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Leánykori név:</Label>
+                                        <TextBox Width="200" Height="30" FontSize="20" FontFamily="Times New Roman" Grid.Row="2" Grid.Column="1" x:Name="szerk_leanykori_nev_textbox" HorizontalAlignment="Left"/>
+                                        <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Lakcím:</Label>
+                                        <TextBox Width="400" Height="30" FontSize="20" FontFamily="Times New Roman" Grid.Row="3" Grid.Column="1" x:Name="szerk_lakcím_textbox" HorizontalAlignment="Left"/>
+                                        <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Anyja neve:</Label>
+                                        <TextBox Width="200" Height="30" FontSize="20" FontFamily="Times New Roman" Grid.Row="4" Grid.Column="1" x:Name="szerk_anyja_nev_textbox" HorizontalAlignment="Left"/>
+                                        <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Születési helye:</Label>
+                                        <TextBox Width="200" Height="30" FontSize="20" FontFamily="Times New Roman" Grid.Row="5" Grid.Column="1" x:Name="szerk_szuletesi_helye_textbox" HorizontalAlignment="Left"/>
+                                        <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Telefonszám:</Label>
+                                        <TextBox Width="200" Height="30" FontSize="20" FontFamily="Times New Roman" Grid.Row="6" Grid.Column="1" x:Name="szerk_telefonszám_textbox" HorizontalAlignment="Left"/>
+                                        <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="7" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">E-mail cím:</Label>
+                                        <TextBox Width="200" Height="30" FontSize="20" FontFamily="Times New Roman" Grid.Row="7" Grid.Column="1" x:Name="szerk_email_textbox" HorizontalAlignment="Left"/>
+                                        <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="8" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Születési ideje:</Label>
+                                        <DatePicker Grid.Row="8" Grid.Column="1" x:Name="szerk_szul_datum_datepicker" HorizontalAlignment="Left" Height="32" Width="296"></DatePicker>
+                                        <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="9" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Adószám:</Label>
+                                        <TextBox Width="200" Height="30" FontSize="20" FontFamily="Times New Roman" Grid.Row="9" Grid.Column="1" x:Name="szerk_adoszam_textbox" HorizontalAlignment="Left"/>
+                                        <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="10" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Adóazonostó jel:</Label>
+                                        <TextBox Width="200" Height="30" FontSize="20" FontFamily="Times New Roman" Grid.Row="10" Grid.Column="1" x:Name="szerk_adoazonosito_jel_textbox" HorizontalAlignment="Left"/>
+                                        <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="11" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">MVH_regisztrációs_száma:</Label>
+                                        <TextBox Width="200" Height="30" FontSize="20" FontFamily="Times New Roman" Grid.Row="11" Grid.Column="1" x:Name="szerk_mvh_reg_szam_textbox" HorizontalAlignment="Left"/>
+                                        <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="12" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Zöldkönyvszám:</Label>
+                                        <TextBox Width="200" Height="30" FontSize="20" FontFamily="Times New Roman" Grid.Row="12" Grid.Column="1" x:Name="szerk_zöldkönyv_szam_textbox" HorizontalAlignment="Left"/>
+                                        <Button Height="65"  FontSize="20" FontFamily="Times New Roman" Grid.Row="13" Grid.Column="0" x:Name="szerk_ugyfel_button" Content="Frissítem" Width="200" Click="szerk_ugyfel_button_Click"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                        <Button Height="65"  FontSize="20" FontFamily="Times New Roman" Grid.Row="13" Grid.Column="1" x:Name="del_ugyfel_button" Content="Törlöm" Width="200" Click="del_ugyfel_button_Click"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                        <TextBlock Foreground="Green" FontSize="20" FontFamily="Times New Roman" Height="30" Grid.Row="14" Grid.ColumnSpan="1" x:Name="sikerultvagynem_a_szerk_textblock" Width="200" HorizontalAlignment="Center"/>
+                                   </Grid>
+                              </StackPanel>
+                         </StackPanel>
+                    </ScrollViewer>
+               </Grid>
+          </Frame.Content>
+     </Frame>
+</Page>

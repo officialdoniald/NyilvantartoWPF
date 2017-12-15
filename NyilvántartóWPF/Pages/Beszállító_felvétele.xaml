@@ -1,0 +1,59 @@
+﻿<Page x:Class="NyilvántartóWPF.Pages.Beszállító_felvétele"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NyilvántartóWPF.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Beszállító_felvétele">
+
+     <Frame NavigationUIVisibility="Hidden" x:Name="_NavigationFrame">
+          <Frame.Content>
+               <Grid>
+                    <DockPanel>
+                         <Frame NavigationUIVisibility="Hidden"/>
+                    </DockPanel>
+                    <ScrollViewer HorizontalAlignment="Stretch">
+                         <StackPanel Margin="300,0,0,0" Visibility="Visible">
+                              <TextBlock FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Center">Beszállítók felvétele</TextBlock>
+                              <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                                   <Grid.RowDefinitions>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                        <RowDefinition Height="75"></RowDefinition>
+                                   </Grid.RowDefinitions>
+                                   <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="292"></ColumnDefinition>
+                                        <ColumnDefinition Width="408"></ColumnDefinition>
+                                   </Grid.ColumnDefinitions>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Cég neve:</Label>
+                                   <TextBox Width="200" Height="30"  FontSize="20" FontFamily="Times New Roman" Grid.Row="1" Grid.Column="1" x:Name="ceg_nev_textbox" HorizontalAlignment="Left"/>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Cég címe:</Label>
+                                   <TextBox Width="200" Height="30"  FontSize="20" FontFamily="Times New Roman" Grid.Row="2" Grid.Column="1" x:Name="ceg_cime_textbox" HorizontalAlignment="Left"/>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Cég adószáma:</Label>
+                                   <TextBox Width="200" Height="30"  FontSize="20" FontFamily="Times New Roman" Grid.Row="3" Grid.Column="1" x:Name="ceg_adoszama_textbox" HorizontalAlignment="Left"/>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Cég bankszámlaszáma:</Label>
+                                   <TextBox Width="200" Height="30"  FontSize="20" FontFamily="Times New Roman" Grid.Row="4" Grid.Column="1" x:Name="ceg_bankszámlaszama_textbox" HorizontalAlignment="Left"/>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Kapcsolattartó neve:</Label>
+                                   <TextBox Width="200" Height="30"  FontSize="20" FontFamily="Times New Roman" Grid.Row="5" Grid.Column="1" x:Name="kapcsolattarto_nev_textbox" HorizontalAlignment="Left"/>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Kapcsolattartó telefonszáma:</Label>
+                                   <TextBox Width="200" Height="30"  FontSize="20" FontFamily="Times New Roman" Grid.Row="6" Grid.Column="1" x:Name="kapcsolattarto_telszam_textbox" HorizontalAlignment="Left"/>
+                                   <Label Height="40"  FontSize="20" FontFamily="Times New Roman" Grid.Row="7" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">Kapcsolattartó email-címe:</Label>
+                                   <TextBox Width="200" Height="30"  FontSize="20" FontFamily="Times New Roman" Grid.Row="7" Grid.Column="1" x:Name="kapcsolattarto_email_textbox" HorizontalAlignment="Left"/>
+                                   <Button Height="65"  FontSize="20" FontFamily="Times New Roman" Grid.Row="8" Grid.ColumnSpan="2" x:Name="felv_button" Content="Felvétel" Width="200" Click="felv_button_Click" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                                   <TextBlock Foreground="Green" FontSize="20" FontFamily="Times New Roman" Height="40" Grid.Row="8" Grid.Column="1"  x:Name="sikerultvagynem_textblock" Width="200" HorizontalAlignment="Center"/>
+                              </Grid>
+                         </StackPanel>
+                    </ScrollViewer>
+               </Grid>
+          </Frame.Content>
+     </Frame>
+</Page>
